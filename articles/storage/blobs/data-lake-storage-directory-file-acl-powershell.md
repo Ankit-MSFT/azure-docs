@@ -73,7 +73,7 @@ $ctx = New-AzStorageContext -StorageAccountName '<storage-account-name>' -UseCon
 With this approach, the system doesn't check Azure RBAC or ACL permissions.
 
 ```powershell
-$storageAccount = Get-AzStorageAccount -ResourceGroupName "<resource-group-name>" -AccountName "<storage-account-name>"
+$storageAccount = Get-AzStorageAccount -StorageAccountKey "<storage-account-key>" -AccountName "<storage-account-name>"
 $ctx = $storageAccount.Context
 ```
 
